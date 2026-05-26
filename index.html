@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="東京国際大学 商学部  データサイエンスコース 東国　花子">
+<meta name="author" content="東京国際大学 商学部  データサイエンスコース 大山翔">
 
-<title>東京都内シェアサイクル利用数の予測モデル構築に関する研究</title>
+<title>AIの普及と求人の変化の関係</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,7 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01_研究概要.html" rel="next">
+<link href="./research_plan.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">東京都内シェアサイクル利用数の予測モデル構築に関する研究</a> 
+      <a href="./">AIの普及と求人の変化の関係</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -116,6 +116,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">目次</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./research_plan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -128,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01_研究概要.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究概要</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">研究概要</span></span></a>
   </div>
 </li>
       </ul>
@@ -145,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02_データ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">データ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">データ</span></span></a>
   </div>
 </li>
       </ul>
@@ -162,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03_分析手法.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">分析手法</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></span></a>
   </div>
 </li>
       </ul>
@@ -179,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04_結果と考察.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">結果と考察</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">結果と考察</span></span></a>
   </div>
 </li>
       </ul>
@@ -196,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05_まとめ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">まとめ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">まとめ</span></span></a>
   </div>
 </li>
       </ul>
@@ -225,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">東京都内シェアサイクル利用数の予測モデル構築に関する研究</h1>
+<h1 class="title">AIの普及と求人の変化の関係</h1>
 </div>
 
 
@@ -235,14 +241,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">作成者</div>
     <div class="quarto-title-meta-contents">
-             <p>東京国際大学 商学部 <br>データサイエンスコース<br>東国　花子 </p>
+             <p>東京国際大学 商学部 <br>データサイエンスコース<br>大山翔 </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">作成日</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026年4月21日</p>
+      <p class="date">2026年5月26日</p>
     </div>
   </div>
   
@@ -700,8 +706,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01_研究概要.html" class="pagination-link" aria-label="研究概要">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究概要</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./research_plan.html" class="pagination-link" aria-label="研究計画書">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

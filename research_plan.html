@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="大山翔">
 
-<title>5&nbsp; 分析手法 – AIの普及と求人の変化の関係</title>
+<title>2&nbsp; 研究計画書 – AIの普及と求人の変化の関係</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,26 +24,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,8 +34,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./04_結果と考察.html" rel="next">
-<link href="./02_データ.html" rel="prev">
+<link href="./01_研究概要.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -91,44 +73,11 @@ div.csl-indent {
     "search-label": "サーチ"
   }
 }</script>
-<meta name="mermaid-theme" content="default">
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-sidebar floating slimcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -137,7 +86,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./research_plan.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -170,7 +119,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./research_plan.html" class="sidebar-item-text sidebar-link">
+  <a href="./research_plan.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span></a>
   </div>
 </li>
@@ -219,7 +168,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_分析手法.html" class="sidebar-item-text sidebar-link active">
+  <a href="./03_分析手法.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></span></a>
   </div>
 </li>
@@ -269,27 +218,33 @@ window.Quarto = {
     <h2 id="toc-title">目次</h2>
    
   <ul class="collapse">
-  <li><a href="#手法の選定" id="toc-手法の選定" class="nav-link active" data-scroll-target="#手法の選定"><span class="header-section-number">5.1</span> 手法の選定</a></li>
-  <li><a href="#線形回帰ベースライン" id="toc-線形回帰ベースライン" class="nav-link" data-scroll-target="#線形回帰ベースライン"><span class="header-section-number">5.2</span> 線形回帰（ベースライン）</a></li>
-  <li><a href="#lightgbm" id="toc-lightgbm" class="nav-link" data-scroll-target="#lightgbm"><span class="header-section-number">5.3</span> LightGBM</a></li>
-  <li><a href="#説明変数の設計" id="toc-説明変数の設計" class="nav-link" data-scroll-target="#説明変数の設計"><span class="header-section-number">5.4</span> 説明変数の設計</a></li>
-  <li><a href="#分析パイプライン" id="toc-分析パイプライン" class="nav-link" data-scroll-target="#分析パイプライン"><span class="header-section-number">5.5</span> 分析パイプライン</a></li>
-  <li><a href="#精度評価指標" id="toc-精度評価指標" class="nav-link" data-scroll-target="#精度評価指標"><span class="header-section-number">5.6</span> 精度評価指標</a></li>
+  <li><a href="#研究目的" id="toc-研究目的" class="nav-link active" data-scroll-target="#研究目的"><span class="header-section-number">2.1</span> 1.研究目的</a></li>
+  <li><a href="#リサーチクエスチョン" id="toc-リサーチクエスチョン" class="nav-link" data-scroll-target="#リサーチクエスチョン"><span class="header-section-number">2.2</span> 2. リサーチクエスチョン</a></li>
+  <li><a href="#仮説" id="toc-仮説" class="nav-link" data-scroll-target="#仮説"><span class="header-section-number">2.3</span> 3.仮説</a></li>
+  <li><a href="#使用データ" id="toc-使用データ" class="nav-link" data-scroll-target="#使用データ"><span class="header-section-number">2.4</span> 4.使用データ</a></li>
+  <li><a href="#分析方法" id="toc-分析方法" class="nav-link" data-scroll-target="#分析方法"><span class="header-section-number">2.5</span> 5.分析方法</a></li>
+  <li><a href="#スケジュール" id="toc-スケジュール" class="nav-link" data-scroll-target="#スケジュール"><span class="header-section-number">2.6</span> 6.スケジュール</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">作成者</div>
+    <div class="quarto-title-meta-contents">
+             <p>大山翔 </p>
+          </div>
+  </div>
     
   
     
@@ -300,257 +255,76 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="書き方ガイド：分析手法">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">ヒント</span>書き方ガイド：分析手法
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>何を書くか：</strong> 使用する分析手法の理論的背景と、なぜその手法を選んだかの根拠を述べる章です。</p>
-<p><strong>書き方のコツ：</strong></p>
-<ul>
-<li><strong>手法の選定理由</strong> を比較表で示すと説得力が増します</li>
-<li><strong>数学的な定義</strong> は LaTeX 数式で正確に記述します</li>
-<li>パイプライン全体を図解すると読者の理解が深まります</li>
-<li>評価指標は定義を明示し、なぜその指標を使うのかを説明します</li>
-</ul>
-<p><strong>Quartoの機能：</strong></p>
-<ul>
-<li>LaTeX 数式は <code>$$</code> で囲みます。<code>{#eq-label}</code> で式番号を付与し、<code>@eq-label</code> で参照します</li>
-<li>Mermaid 記法でパイプライン図やフロー図を描けます</li>
-<li><code>#| label: tbl-xxx</code> と <code>#| tbl-cap:</code> で表番号とキャプションを自動付与します</li>
-</ul>
-</div>
-</div>
-<section id="手法の選定" class="level2 page-columns page-full" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="手法の選定"><span class="header-section-number">5.1</span> 手法の選定</h2>
-<p>本研究では、以下の2手法を比較する。ベースラインとして線形回帰を用い、高精度な予測手法として勾配ブースティングの一種である LightGBM <span class="citation" data-cites="Ke2017">(<a href="#ref-Ke2017" role="doc-biblioref">Ke ほか 2017年</a>)</span> を採用する。</p>
-<div class="no-row-height column-margin column-container"></div><div id="tbl-method-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-method-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;5.1: 手法の比較
-</figcaption>
-<div aria-describedby="tbl-method-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section id="研究目的" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="研究目的"><span class="header-section-number">2.1</span> 1.研究目的</h2>
+<p>AIが社会に広く普及し、社会の中心となっていくであろうこれからの時代に向け、AIと社会の関連を知っておきたいと思った</p>
+</section>
+<section id="リサーチクエスチョン" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="リサーチクエスチョン"><span class="header-section-number">2.2</span> 2. リサーチクエスチョン</h2>
+<p>「生成AIの普及は求人に影響を与えたのか」</p>
+</section>
+<section id="仮説" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="仮説"><span class="header-section-number">2.3</span> 3.仮説</h2>
+<p>影響を与えたと考える（特に、IT分野の仕事など）</p>
+</section>
+<section id="使用データ" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="使用データ"><span class="header-section-number">2.4</span> 4.使用データ</h2>
+<p>gogle trandsの検索データ,indeed等のサイトの求人データ</p>
+</section>
+<section id="分析方法" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="分析方法"><span class="header-section-number">2.5</span> 5.分析方法</h2>
+<p>時系列比較　相関分析</p>
+</section>
+<section id="スケジュール" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="スケジュール"><span class="header-section-number">2.6</span> 6.スケジュール</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>手法</th>
-<th>特徴</th>
-<th>利点</th>
-<th>欠点</th>
+<th>回</th>
+<th>予定作業</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>線形回帰</td>
-<td>線形モデル</td>
-<td>解釈が容易、計算が高速</td>
-<td>非線形関係を捉えにくい</td>
+<td>第4回</td>
+<td>求人サイトのデータを探しダウンロード</td>
 </tr>
 <tr class="even">
-<td>LightGBM</td>
-<td>勾配ブースティング決定木</td>
-<td>高精度、非線形対応</td>
-<td>過学習リスク、解釈が複雑</td>
+<td>第5回</td>
+<td>検索データとの比較 AI以外の要因を調査</td>
+</tr>
+<tr class="odd">
+<td>第6回</td>
+<td>時系列比較、見直し</td>
+</tr>
+<tr class="even">
+<td>第7回</td>
+<td>中間発表</td>
+</tr>
+<tr class="odd">
+<td>第8回</td>
+<td>データ整理など</td>
+</tr>
+<tr class="even">
+<td>第9回</td>
+<td>相関分析、グラフ作成</td>
+</tr>
+<tr class="odd">
+<td>第10回</td>
+<td>考察</td>
+</tr>
+<tr class="even">
+<td>第11回</td>
+<td>見直し</td>
+</tr>
+<tr class="odd">
+<td>第12回</td>
+<td>最終確認</td>
 </tr>
 </tbody>
 </table>
-</div>
-</figure>
-</div>
-</section>
-<section id="線形回帰ベースライン" class="level2 page-columns page-full" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="線形回帰ベースライン"><span class="header-section-number">5.2</span> 線形回帰（ベースライン）</h2>
-<p>線形回帰モデルは、目的変数 <span class="math inline">\(y\)</span> を説明変数 <span class="math inline">\(\mathbf{x} = (x_1, x_2, \ldots, x_p)\)</span> の線形結合で表現する。</p>
-<p><span id="eq-linear"><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p + \varepsilon
-\tag{5.1}\]</span></span></p>
-<p>ここで <span class="math inline">\(\beta_0\)</span> は切片、<span class="math inline">\(\beta_1, \ldots, \beta_p\)</span> は回帰係数、<span class="math inline">\(\varepsilon\)</span> は誤差項である <span class="citation" data-cites="James2023">(<a href="#ref-James2023" role="doc-biblioref">James ほか 2023年</a>)</span>。</p>
-<div class="no-row-height column-margin column-container"><div id="ref-James2023" class="csl-entry" role="listitem">
-James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, と Jonathan Taylor. 2023年. <em>An Introduction to Statistical Learning: with Applications in <span>R</span></em>. 2nd 版. Springer. <a href="https://doi.org/10.1007/978-3-031-38747-0">https://doi.org/10.1007/978-3-031-38747-0</a>.
-</div></div></section>
-<section id="lightgbm" class="level2 page-columns page-full" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="lightgbm"><span class="header-section-number">5.3</span> LightGBM</h2>
-<p>LightGBM は、勾配ブースティング決定木（GBDT）の高速な実装である <span class="citation" data-cites="Ke2017">(<a href="#ref-Ke2017" role="doc-biblioref">Ke ほか 2017年</a>)</span>。複数の弱学習器（決定木）を逐次的に構築し、残差を学習することで高い予測精度を実現する。</p>
-<div class="no-row-height column-margin column-container"><div id="ref-Ke2017" class="csl-entry" role="listitem">
-Ke, Guolin, Qi Meng, Thomas Finley, ほか. 2017年. <span>「<span>LightGBM</span>: A Highly Efficient Gradient Boosting Decision Tree」</span>. <em>Advances in Neural Information Processing Systems 30 (NeurIPS 2017)</em>, 3146–54.
-</div></div><section id="勾配ブースティングの概要" class="level3">
-<h3 class="anchored" data-anchor-id="勾配ブースティングの概要">勾配ブースティングの概要</h3>
-<p>勾配ブースティングでは、<span class="math inline">\(M\)</span> 本の決定木 <span class="math inline">\(f_m\)</span> を逐次的に加えることで予測関数 <span class="math inline">\(F\)</span> を構築する。</p>
-<p><span id="eq-gbdt"><span class="math display">\[
-F_M(\mathbf{x}) = F_0(\mathbf{x}) + \sum_{m=1}^{M} \eta \cdot f_m(\mathbf{x})
-\tag{5.2}\]</span></span></p>
-<p>ここで <span class="math inline">\(\eta\)</span> は学習率（learning rate）であり、各ステップの寄与を制御する。各ステップ <span class="math inline">\(m\)</span> では、損失関数 <span class="math inline">\(L\)</span> の負の勾配（擬似残差）に対して決定木 <span class="math inline">\(f_m\)</span> を適合させる。</p>
-<p><span id="eq-pseudo-residual"><span class="math display">\[
-r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf{x}_i)}
-\tag{5.3}\]</span></span></p>
-</section>
-<section id="決定木の構造" class="level3">
-<h3 class="anchored" data-anchor-id="決定木の構造">決定木の構造</h3>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div id="fig-decision-tree" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-decision-tree">flowchart TD
-    A["気温 ≥ 20°C ?"] --&gt;|Yes| B["時間帯 ∈ 通勤時間 ?"]
-    A --&gt;|No| C["降雨あり ?"]
-    B --&gt;|Yes| D["予測: 150台"]
-    B --&gt;|No| E["予測: 90台"]
-    C --&gt;|Yes| F["予測: 25台"]
-    C --&gt;|No| G["予測: 55台"]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;5.1: 決定木による分岐のイメージ
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="lightgbm-の特徴" class="level3">
-<h3 class="anchored" data-anchor-id="lightgbm-の特徴">LightGBM の特徴</h3>
-<p>LightGBM は以下の工夫により高速化を実現している。</p>
-<ol type="1">
-<li><strong>Gradient-based One-Side Sampling (GOSS):</strong> 勾配の大きいサンプルを重点的に使用</li>
-<li><strong>Exclusive Feature Bundling (EFB):</strong> 相互排他的な特徴量をまとめて計算量を削減</li>
-<li><strong>Leaf-wise (Best-first) 成長:</strong> Level-wise よりも効率的な木の成長戦略</li>
-</ol>
-</section>
-</section>
-<section id="説明変数の設計" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="説明変数の設計"><span class="header-section-number">5.4</span> 説明変数の設計</h2>
-<div id="tbl-features" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-features-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;5.2: 説明変数一覧
-</figcaption>
-<div aria-describedby="tbl-features-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>変数名</th>
-<th>型</th>
-<th>説明</th>
-<th>変換</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>hour</code></td>
-<td>integer</td>
-<td>時間帯</td>
-<td>そのまま使用</td>
-</tr>
-<tr class="even">
-<td><code>temperature</code></td>
-<td>numeric</td>
-<td>気温</td>
-<td>そのまま使用</td>
-</tr>
-<tr class="odd">
-<td><code>humidity</code></td>
-<td>numeric</td>
-<td>湿度</td>
-<td>そのまま使用</td>
-</tr>
-<tr class="even">
-<td><code>wind_speed</code></td>
-<td>numeric</td>
-<td>風速</td>
-<td>そのまま使用</td>
-</tr>
-<tr class="odd">
-<td><code>is_rain</code></td>
-<td>integer</td>
-<td>降雨フラグ</td>
-<td>factor 変換</td>
-</tr>
-<tr class="even">
-<td><code>is_weekend</code></td>
-<td>logical</td>
-<td>休日フラグ</td>
-<td>factor 変換</td>
-</tr>
-<tr class="odd">
-<td><code>month</code></td>
-<td>integer</td>
-<td>月</td>
-<td>factor 変換</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-</section>
-<section id="分析パイプライン" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="分析パイプライン"><span class="header-section-number">5.5</span> 分析パイプライン</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div id="fig-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-pipeline">flowchart LR
-    A[データ生成] --&gt; B[前処理&lt;br&gt;recipe]
-    B --&gt; C[訓練/テスト分割&lt;br&gt;80:20]
-    C --&gt; D[モデル学習]
-    D --&gt; E1[線形回帰]
-    D --&gt; E2[LightGBM]
-    E1 --&gt; F[精度評価&lt;br&gt;MAE/RMSE/R²]
-    E2 --&gt; F
-    F --&gt; G[変数重要度&lt;br&gt;分析]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;5.2: 分析パイプライン
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="精度評価指標" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="精度評価指標"><span class="header-section-number">5.6</span> 精度評価指標</h2>
-<p>モデルの予測精度を評価するため、以下の3指標を使用する。</p>
-<section id="平均絶対誤差mae" class="level3">
-<h3 class="anchored" data-anchor-id="平均絶対誤差mae">平均絶対誤差（MAE）</h3>
-<p><span id="eq-mae"><span class="math display">\[
-\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
-\tag{5.4}\]</span></span></p>
-</section>
-<section id="二乗平均平方根誤差rmse" class="level3">
-<h3 class="anchored" data-anchor-id="二乗平均平方根誤差rmse">二乗平均平方根誤差（RMSE）</h3>
-<p><span id="eq-rmse"><span class="math display">\[
-\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
-\tag{5.5}\]</span></span></p>
-</section>
-<section id="決定係数r²" class="level3">
-<h3 class="anchored" data-anchor-id="決定係数r²">決定係数（R²）</h3>
-<p><span id="eq-r2"><span class="math display">\[
-R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}
-\tag{5.6}\]</span></span></p>
-<p>ここで <span class="math inline">\(y_i\)</span> は実測値、<span class="math inline">\(\hat{y}_i\)</span> は予測値、<span class="math inline">\(\bar{y}\)</span> は実測値の平均、<span class="math inline">\(n\)</span> はサンプル数である。</p>
-<p><a href="#eq-mae" class="quarto-xref">式&nbsp;<span>5.4</span></a> は外れ値に頑健な指標、<a href="#eq-rmse" class="quarto-xref">式&nbsp;<span>5.5</span></a> は大きな誤差をより重く評価する指標、<a href="#eq-r2" class="quarto-xref">式&nbsp;<span>5.6</span></a> はモデルの説明力を0〜1で表す指標である。</p>
 
 
-
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -956,13 +730,13 @@ R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02_データ.html" class="pagination-link" aria-label="データ">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">データ</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="目次">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">目次</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./04_結果と考察.html" class="pagination-link" aria-label="結果と考察">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">結果と考察</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01_研究概要.html" class="pagination-link" aria-label="研究概要">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">研究概要</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
