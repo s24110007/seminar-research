@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="東京国際大学 商学部  データサイエンスコース 大山翔">
 
-<title>AIの普及と求人の変化の関係</title>
+<title>3&nbsp; data_check – AIの普及と求人の変化の関係</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,7 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./research_plan.html" rel="next">
+<link href="./01_研究概要.html" rel="next">
+<link href="./research_plan.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,6 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-7d6722f26c9eca90c1a43cf756b6898c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,6 +75,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "サーチ"
   }
 }</script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
 
 
 </head>
@@ -85,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">目次</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_check.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">data_check</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -112,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">目次</span></span></a>
   </div>
 </li>
@@ -124,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_check.html" class="sidebar-item-text sidebar-link">
+  <a href="./data_check.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">data_check</span></span></a>
   </div>
 </li>
@@ -223,12 +230,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul class="collapse">
-  <li><a href="#第1章-研究概要" id="toc-第1章-研究概要" class="nav-link active" data-scroll-target="#第1章-研究概要">第1章　研究概要</a></li>
-  <li><a href="#第2章-データ" id="toc-第2章-データ" class="nav-link" data-scroll-target="#第2章-データ">第2章　データ</a></li>
-  <li><a href="#第3章-分析手法" id="toc-第3章-分析手法" class="nav-link" data-scroll-target="#第3章-分析手法">第3章　分析手法</a></li>
-  <li><a href="#第4章-結果と考察" id="toc-第4章-結果と考察" class="nav-link" data-scroll-target="#第4章-結果と考察">第4章　結果と考察</a></li>
-  <li><a href="#第5章-まとめ" id="toc-第5章-まとめ" class="nav-link" data-scroll-target="#第5章-まとめ">第5章　まとめ</a></li>
-  <li><a href="#発表資料" id="toc-発表資料" class="nav-link" data-scroll-target="#発表資料">発表資料</a></li>
+  <li><a href="#生成aiに関連する求人数の推移2023年" id="toc-生成aiに関連する求人数の推移2023年" class="nav-link active" data-scroll-target="#生成aiに関連する求人数の推移2023年"><span class="header-section-number">4</span> 生成AIに関連する求人数の推移(2023年)</a></li>
+  <li><a href="#情報通信業雇用数の推移" id="toc-情報通信業雇用数の推移" class="nav-link" data-scroll-target="#情報通信業雇用数の推移"><span class="header-section-number">5</span> 情報通信業雇用数の推移</a></li>
   </ul>
 </nav>
     </div>
@@ -237,26 +240,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AIの普及と求人の変化の関係</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">data_check</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作成者</div>
-    <div class="quarto-title-meta-contents">
-             <p>東京国際大学 商学部 <br>データサイエンスコース<br>大山翔 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">作成日</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年5月29日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -266,43 +257,234 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="第1章-研究概要" class="level1">
-<h1>第1章　研究概要</h1>
-<ul>
-<li><a href="01_研究概要.html">研究概要</a></li>
-</ul>
+<section id="生成aiに関連する求人数の推移2023年" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 生成AIに関連する求人数の推移(2023年)</h1>
+<p><img src="unnamed (1).png" class="img-fluid" alt="画像"> <img src="unnamed (2).png" class="img-fluid" alt="画像"> <img src="unnamed (3).png" class="img-fluid" alt="画像"></p>
+<p><a href="https://www.hiringlab.org/jp/blog/2023/08/29/%E6%96%B0%E8%88%88%E5%8A%B4%E5%83%8D%E5%B8%82%E5%A0%B4%EF%BC%9A%E7%94%9F%E6%88%90ai%E3%81%AB%E9%96%A2%E9%80%A3%E3%81%99%E3%82%8B%E8%81%B7%E3%81%AE%E5%8F%B0%E9%A0%AD/">出典</a></p>
 </section>
-<section id="第2章-データ" class="level1">
-<h1>第2章　データ</h1>
-<ul>
-<li><a href="02_データ.html">データ</a></li>
-</ul>
-</section>
-<section id="第3章-分析手法" class="level1">
-<h1>第3章　分析手法</h1>
-<ul>
-<li><a href="03_分析手法.html">分析手法</a></li>
-</ul>
-</section>
-<section id="第4章-結果と考察" class="level1">
-<h1>第4章　結果と考察</h1>
-<ul>
-<li><a href="04_結果と考察.html">結果と考察</a></li>
-</ul>
-</section>
-<section id="第5章-まとめ" class="level1">
-<h1>第5章　まとめ</h1>
-<ul>
-<li><a href="05_まとめ.html">まとめ</a></li>
-</ul>
-</section>
-<section id="発表資料" class="level1">
-<h1>発表資料</h1>
-<ul>
-<li><a href="a1_発表資料.html" target="_blank">スライド（HTML）</a></li>
-<li><a href="a1_発表資料.pdf" target="_blank">スライド（PDF）</a></li>
-<li><a href="a1_発表資料.pptx">スライド（PowerPoint）</a></li>
-</ul>
+<section id="情報通信業雇用数の推移" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 情報通信業雇用数の推移</h1>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...2`
+• `` -&gt; `...3`
+• `` -&gt; `...4`
+• `長期時系列表１　ｃ－３　主な産業別就業者　【第12～14回改定日本標準産業分類】
+  － 全国、月別結果` -&gt;
+  `長期時系列表１　ｃ－３　主な産業別就業者　【第12～14回改定日本標準産業分類】
+  － 全国、月別結果...5`
+• `` -&gt; `...6`
+• `` -&gt; `...7`
+• `` -&gt; `...8`
+• `` -&gt; `...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `` -&gt; `...12`
+• `` -&gt; `...13`
+• `長期時系列表１　ｃ－３　主な産業別就業者　【第12～14回改定日本標準産業分類】
+  － 全国、月別結果` -&gt;
+  `長期時系列表１　ｃ－３　主な産業別就業者　【第12～14回改定日本標準産業分類】
+  － 全国、月別結果...14`
+• `` -&gt; `...15`
+• `` -&gt; `...16`
+• `` -&gt; `...17`
+• `` -&gt; `...18`
+• `` -&gt; `...19`
+• `` -&gt; `...20`
+• `` -&gt; `...21`
+• `` -&gt; `...22`</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `NA` -&gt; `NA...2`
+• `NA` -&gt; `NA...3`
+• `NA` -&gt; `NA...4`</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["年　　月\r\r\nYear and month"],"name":[1],"type":["chr"],"align":["left"]},{"label":["NA...2"],"name":[2],"type":["chr"],"align":["left"]},{"label":["NA...3"],"name":[3],"type":["chr"],"align":["left"]},{"label":["NA...4"],"name":[4],"type":["lgl"],"align":["right"]},{"label":["総数"],"name":[5],"type":["chr"],"align":["left"]},{"label":["農業，林業"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["非農林業"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["建設業"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["製造業"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["情報通信業"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["運輸業，郵便業"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["卸売業，小売業"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["金融業，保険業"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["不動産業，物品賃貸業"],"name":[14],"type":["chr"],"align":["left"]},{"label":["学術研究，専門・技術サービス業"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["宿泊業，飲食サービス業"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["生活関連サービス業，娯楽業"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["教育，学習支援業"],"name":[18],"type":["dbl"],"align":["right"]},{"label":["医療，福祉"],"name":[19],"type":["dbl"],"align":["right"]},{"label":["複合サービス事業"],"name":[20],"type":["dbl"],"align":["right"]},{"label":["サービス業（他に分類されないもの）"],"name":[21],"type":["dbl"],"align":["right"]},{"label":["公務（他に分類されるものを除く）"],"name":[22],"type":["dbl"],"align":["right"]}],"data":[{"1":"NA","2":"NA","3":"NA","4":"NA","5":"NA","6":"NA","7":"NA","8":"NA","9":"NA","10":"NA","11":"NA","12":"NA","13":"NA","14":"NA","15":"NA","16":"NA","17":"NA","18":"NA","19":"NA","20":"NA","21":"NA","22":"NA"},{"1":"NA","2":"NA","3":"NA","4":"NA","5":"NA","6":"NA","7":"NA","8":"NA","9":"NA","10":"NA","11":"NA","12":"NA","13":"NA","14":"NA","15":"NA","16":"NA","17":"NA","18":"NA","19":"NA","20":"NA","21":"NA","22":"NA"},{"1":"平成14年","2":"1月","3":"Jan.","4":"NA","5":"6267","6":"224","7":"6043","8":"589","9":"1210","10":"153","11":"331","12":"1131","13":"165","14":"95","15":"208","16":"393","17":"243","18":"284","19":"462","20":"76","21":"373","22":"219"},{"1":"2002","2":"2月","3":"Feb.","4":"NA","5":"6248","6":"227","7":"6021","8":"611","9":"1201","10":"156","11":"324","12":"1075","13":"164","14":"96","15":"208","16":"395","17":"246","18":"273","19":"471","20":"76","21":"374","22":"218"},{"1":"NA","2":"3月","3":"Mar.","4":"NA","5":"6297","6":"242","7":"6055","8":"628","9":"1238","10":"156","11":"323","12":"1081","13":"161","14":"99","15":"207","16":"397","17":"246","18":"266","19":"467","20":"76","21":"375","22":"218"},{"1":"※注_Notes","2":"4月","3":"Apr.","4":"NA","5":"6333","6":"278","7":"6055","8":"624","9":"1213","10":"159","11":"315","12":"1121","13":"167","14":"95","15":"200","16":"394","17":"235","18":"267","19":"473","20":"73","21":"383","22":"212"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [306 × 22] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ 年　　月
+
+
+Year and month      : chr [1:306] NA NA "平成14年" "2002" ...
+ $ NA...2                            : chr [1:306] NA NA "1月" "2月" ...
+ $ NA...3                            : chr [1:306] NA NA "Jan." "Feb." ...
+ $ NA...4                            : logi [1:306] NA NA NA NA NA NA ...
+ $ 総数                              : chr [1:306] NA NA "6267" "6248" ...
+ $ 農業，林業                        : num [1:306] NA NA 224 227 242 278 307 311 294 288 ...
+ $ 非農林業                          : num [1:306] NA NA 6043 6021 6055 ...
+ $ 建設業                            : num [1:306] NA NA 589 611 628 624 607 594 622 620 ...
+ $ 製造業                            : num [1:306] NA NA 1210 1201 1238 ...
+ $ 情報通信業                        : num [1:306] NA NA 153 156 156 159 157 159 160 164 ...
+ $ 運輸業，郵便業                    : num [1:306] NA NA 331 324 323 315 322 330 328 326 ...
+ $ 卸売業，小売業                    : num [1:306] NA NA 1131 1075 1081 ...
+ $ 金融業，保険業                    : num [1:306] NA NA 165 164 161 167 171 170 180 176 ...
+ $ 不動産業，物品賃貸業              : chr [1:306] NA NA "95" "96" ...
+ $ 学術研究，専門・技術サービス業    : num [1:306] NA NA 208 208 207 200 203 202 189 199 ...
+ $ 宿泊業，飲食サービス業            : num [1:306] NA NA 393 395 397 394 391 390 405 400 ...
+ $ 生活関連サービス業，娯楽業        : num [1:306] NA NA 243 246 246 235 233 242 234 240 ...
+ $ 教育，学習支援業                  : num [1:306] NA NA 284 273 266 267 270 280 279 287 ...
+ $ 医療，福祉                        : num [1:306] NA NA 462 471 467 473 476 469 480 477 ...
+ $ 複合サービス事業                  : num [1:306] NA NA 76 76 76 73 72 77 75 77 ...
+ $ サービス業（他に分類されないもの）: num [1:306] NA NA 373 374 375 383 375 368 363 372 ...
+ $ 公務（他に分類されるものを除く）  : num [1:306] NA NA 219 218 218 212 217 211 220 224 ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   `年　　月
+
+
+  .. Year and month` = col_character(),
+  ..   NA...2 = col_character(),
+  ..   NA...3 = col_character(),
+  ..   NA...4 = col_logical(),
+  ..   総数 = col_character(),
+  ..   `農業，林業` = col_double(),
+  ..   非農林業 = col_double(),
+  ..   建設業 = col_double(),
+  ..   製造業 = col_double(),
+  ..   情報通信業 = col_double(),
+  ..   `運輸業，郵便業` = col_double(),
+  ..   `卸売業，小売業` = col_double(),
+  ..   `金融業，保険業` = col_double(),
+  ..   `不動産業，物品賃貸業` = col_character(),
+  ..   `学術研究，専門・技術サービス業` = col_double(),
+  ..   `宿泊業，飲食サービス業` = col_double(),
+  ..   `生活関連サービス業，娯楽業` = col_double(),
+  ..   `教育，学習支援業` = col_double(),
+  ..   `医療，福祉` = col_double(),
+  ..   複合サービス事業 = col_double(),
+  ..   `サービス業（他に分類されないもの）` = col_double(),
+  ..   `公務（他に分類されるものを除く）` = col_double()
+  .. )
+ - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>      年　　月\r\r\nYear and month                             NA...2 
+                               250                                  6 
+                            NA...3                             NA...4 
+                                 6                                306 
+                              総数                         農業，林業 
+                                12                                 14 
+                          非農林業                             建設業 
+                                14                                 14 
+                            製造業                         情報通信業 
+                                14                                 14 
+                    運輸業，郵便業                     卸売業，小売業 
+                                14                                 14 
+                    金融業，保険業               不動産業，物品賃貸業 
+                                14                                 12 
+    学術研究，専門・技術サービス業             宿泊業，飲食サービス業 
+                                14                                 14 
+        生活関連サービス業，娯楽業                   教育，学習支援業 
+                                14                                 14 
+                        医療，福祉                   複合サービス事業 
+                                14                                 14 
+サービス業（他に分類されないもの）   公務（他に分類されるものを除く） 
+                                14                                 14 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "年　　月\r\r\nYear and month"       "NA...2"                            
+ [3] "NA...3"                             "NA...4"                            
+ [5] "総数"                               "農業，林業"                        
+ [7] "非農林業"                           "建設業"                            
+ [9] "製造業"                             "情報通信業"                        
+[11] "運輸業，郵便業"                     "卸売業，小売業"                    
+[13] "金融業，保険業"                     "不動産業，物品賃貸業"              
+[15] "学術研究，専門・技術サービス業"     "宿泊業，飲食サービス業"            
+[17] "生活関連サービス業，娯楽業"         "教育，学習支援業"                  
+[19] "医療，福祉"                         "複合サービス事業"                  
+[21] "サービス業（他に分類されないもの）" "公務（他に分類されるものを除く）"  </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> 年　　月\r\r\nYear and month    NA...2             NA...3         
+ Length:306                   Length:306         Length:306        
+ Class :character             Class :character   Class :character  
+ Mode  :character             Mode  :character   Mode  :character  
+                                                                   
+                                                                   
+                                                                   
+                                                                   
+  NA...4            総数             農業，林業       非農林業   
+ Mode:logical   Length:306         Min.   :139.0   Min.   :5972  
+ NA's:306       Class :character   1st Qu.:193.0   1st Qu.:6082  
+                Mode  :character   Median :218.5   Median :6180  
+                                   Mean   :221.3   Mean   :6274  
+                                   3rd Qu.:246.2   3rd Qu.:6516  
+                                   Max.   :322.0   Max.   :6701  
+                                   NA's   :14      NA's   :14    
+     建設業          製造業       情報通信業    運輸業，郵便業 卸売業，小売業
+ Min.   :452.0   Min.   : 996   Min.   :148.0   Min.   :306    Min.   :1005  
+ 1st Qu.:492.0   1st Qu.:1043   1st Qu.:185.8   1st Qu.:332    1st Qu.:1049  
+ Median :505.5   Median :1059   Median :201.5   Median :341    Median :1066  
+ Mean   :518.8   Mean   :1083   Mean   :214.4   Mean   :341    Mean   :1065  
+ 3rd Qu.:546.2   3rd Qu.:1140   3rd Qu.:237.8   3rd Qu.:350    3rd Qu.:1081  
+ Max.   :642.0   Max.   :1238   Max.   :323.0   Max.   :374    Max.   :1134  
+ NA's   :14      NA's   :14     NA's   :14      NA's   :14     NA's   :14    
+ 金融業，保険業  不動産業，物品賃貸業 学術研究，専門・技術サービス業
+ Min.   :140.0   Length:306           Min.   :182.0                 
+ 1st Qu.:156.0   Class :character     1st Qu.:203.0                 
+ Median :160.0   Mode  :character     Median :214.5                 
+ Mean   :161.3                        Mean   :222.9                 
+ 3rd Qu.:166.0                        3rd Qu.:247.0                 
+ Max.   :188.0                        Max.   :286.0                 
+ NA's   :14                           NA's   :14                    
+ 宿泊業，飲食サービス業 生活関連サービス業，娯楽業 教育，学習支援業
+ Min.   :351.0          Min.   :214.0              Min.   :260.0   
+ 1st Qu.:377.0          1st Qu.:230.0              1st Qu.:284.0   
+ Median :388.0          Median :236.0              Median :302.0   
+ Mean   :389.8          Mean   :236.2              Mean   :308.9   
+ 3rd Qu.:399.0          3rd Qu.:243.0              3rd Qu.:336.2   
+ Max.   :454.0          Max.   :254.0              Max.   :371.0   
+ NA's   :14             NA's   :14                 NA's   :14      
+   医療，福祉    複合サービス事業 サービス業（他に分類されないもの）
+ Min.   :462.0   Min.   :36.00    Min.   :357.0                     
+ 1st Qu.:592.0   1st Qu.:49.00    1st Qu.:418.0                     
+ Median :750.0   Median :55.00    Median :452.5                     
+ Mean   :732.6   Mean   :57.64    Mean   :443.0                     
+ 3rd Qu.:864.0   3rd Qu.:63.00    3rd Qu.:466.0                     
+ Max.   :962.0   Max.   :93.00    Max.   :504.0                     
+ NA's   :14      NA's   :14       NA's   :14                        
+ 公務（他に分類されるものを除く）
+ Min.   :209.0                   
+ 1st Qu.:224.0                   
+ Median :232.0                   
+ Mean   :234.3                   
+ 3rd Qu.:245.0                   
+ Max.   :266.0                   
+ NA's   :14                      </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in geom_boxplot(): All aesthetics have length 1, but the data has 306 rows.
+ℹ Please consider using `annotate()` or provide this layer with data containing
+  a single row.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="data_check_files/figure-html/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="data_check_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -710,14 +892,49 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./research_plan.html" class="pagination-link" aria-label="研究計画書">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./research_plan.html" class="pagination-link" aria-label="研究計画書">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01_研究概要.html" class="pagination-link" aria-label="研究概要">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">研究概要</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

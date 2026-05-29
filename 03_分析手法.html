@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; 分析手法 – AIの普及と求人の変化の関係</title>
+<title>6&nbsp; 分析手法 – AIの普及と求人の変化の関係</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -137,7 +137,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -174,6 +174,12 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">研究計画書</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">data_check</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -186,7 +192,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01_研究概要.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">研究概要</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">研究概要</span></span></a>
   </div>
 </li>
       </ul>
@@ -203,7 +209,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02_データ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">データ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">データ</span></span></a>
   </div>
 </li>
       </ul>
@@ -220,7 +226,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03_分析手法.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">分析手法</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,7 +243,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04_結果と考察.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">結果と考察</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">結果と考察</span></span></a>
   </div>
 </li>
       </ul>
@@ -254,7 +260,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05_まとめ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">まとめ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">まとめ</span></span></a>
   </div>
 </li>
       </ul>
@@ -269,21 +275,21 @@ window.Quarto = {
     <h2 id="toc-title">目次</h2>
    
   <ul class="collapse">
-  <li><a href="#手法の選定" id="toc-手法の選定" class="nav-link active" data-scroll-target="#手法の選定"><span class="header-section-number">5.1</span> 手法の選定</a></li>
-  <li><a href="#線形回帰ベースライン" id="toc-線形回帰ベースライン" class="nav-link" data-scroll-target="#線形回帰ベースライン"><span class="header-section-number">5.2</span> 線形回帰（ベースライン）</a></li>
-  <li><a href="#lightgbm" id="toc-lightgbm" class="nav-link" data-scroll-target="#lightgbm"><span class="header-section-number">5.3</span> LightGBM</a></li>
-  <li><a href="#説明変数の設計" id="toc-説明変数の設計" class="nav-link" data-scroll-target="#説明変数の設計"><span class="header-section-number">5.4</span> 説明変数の設計</a></li>
-  <li><a href="#分析パイプライン" id="toc-分析パイプライン" class="nav-link" data-scroll-target="#分析パイプライン"><span class="header-section-number">5.5</span> 分析パイプライン</a></li>
-  <li><a href="#精度評価指標" id="toc-精度評価指標" class="nav-link" data-scroll-target="#精度評価指標"><span class="header-section-number">5.6</span> 精度評価指標</a></li>
+  <li><a href="#手法の選定" id="toc-手法の選定" class="nav-link active" data-scroll-target="#手法の選定"><span class="header-section-number">6.1</span> 手法の選定</a></li>
+  <li><a href="#線形回帰ベースライン" id="toc-線形回帰ベースライン" class="nav-link" data-scroll-target="#線形回帰ベースライン"><span class="header-section-number">6.2</span> 線形回帰（ベースライン）</a></li>
+  <li><a href="#lightgbm" id="toc-lightgbm" class="nav-link" data-scroll-target="#lightgbm"><span class="header-section-number">6.3</span> LightGBM</a></li>
+  <li><a href="#説明変数の設計" id="toc-説明変数の設計" class="nav-link" data-scroll-target="#説明変数の設計"><span class="header-section-number">6.4</span> 説明変数の設計</a></li>
+  <li><a href="#分析パイプライン" id="toc-分析パイプライン" class="nav-link" data-scroll-target="#分析パイプライン"><span class="header-section-number">6.5</span> 分析パイプライン</a></li>
+  <li><a href="#精度評価指標" id="toc-精度評価指標" class="nav-link" data-scroll-target="#精度評価指標"><span class="header-section-number">6.6</span> 精度評価指標</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_分析手法.html">第3章　分析手法</a></li><li class="breadcrumb-item"><a href="./03_分析手法.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">分析手法</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">分析手法</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">分析手法</span></h1>
 </div>
 
 
@@ -326,13 +332,13 @@ window.Quarto = {
 </ul>
 </div>
 </div>
-<section id="手法の選定" class="level2 page-columns page-full" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="手法の選定"><span class="header-section-number">5.1</span> 手法の選定</h2>
+<section id="手法の選定" class="level2 page-columns page-full" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="手法の選定"><span class="header-section-number">6.1</span> 手法の選定</h2>
 <p>本研究では、以下の2手法を比較する。ベースラインとして線形回帰を用い、高精度な予測手法として勾配ブースティングの一種である LightGBM <span class="citation" data-cites="Ke2017">(<a href="#ref-Ke2017" role="doc-biblioref">Ke ほか 2017年</a>)</span> を採用する。</p>
 <div class="no-row-height column-margin column-container"></div><div id="tbl-method-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-method-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;5.1: 手法の比較
+表&nbsp;6.1: 手法の比較
 </figcaption>
 <div aria-describedby="tbl-method-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -369,18 +375,18 @@ window.Quarto = {
 </figure>
 </div>
 </section>
-<section id="線形回帰ベースライン" class="level2 page-columns page-full" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="線形回帰ベースライン"><span class="header-section-number">5.2</span> 線形回帰（ベースライン）</h2>
+<section id="線形回帰ベースライン" class="level2 page-columns page-full" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="線形回帰ベースライン"><span class="header-section-number">6.2</span> 線形回帰（ベースライン）</h2>
 <p>線形回帰モデルは、目的変数 <span class="math inline">\(y\)</span> を説明変数 <span class="math inline">\(\mathbf{x} = (x_1, x_2, \ldots, x_p)\)</span> の線形結合で表現する。</p>
 <p><span id="eq-linear"><span class="math display">\[
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p + \varepsilon
-\tag{5.1}\]</span></span></p>
+\tag{6.1}\]</span></span></p>
 <p>ここで <span class="math inline">\(\beta_0\)</span> は切片、<span class="math inline">\(\beta_1, \ldots, \beta_p\)</span> は回帰係数、<span class="math inline">\(\varepsilon\)</span> は誤差項である <span class="citation" data-cites="James2023">(<a href="#ref-James2023" role="doc-biblioref">James ほか 2023年</a>)</span>。</p>
 <div class="no-row-height column-margin column-container"><div id="ref-James2023" class="csl-entry" role="listitem">
 James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, と Jonathan Taylor. 2023年. <em>An Introduction to Statistical Learning: with Applications in <span>R</span></em>. 2nd 版. Springer. <a href="https://doi.org/10.1007/978-3-031-38747-0">https://doi.org/10.1007/978-3-031-38747-0</a>.
 </div></div></section>
-<section id="lightgbm" class="level2 page-columns page-full" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="lightgbm"><span class="header-section-number">5.3</span> LightGBM</h2>
+<section id="lightgbm" class="level2 page-columns page-full" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="lightgbm"><span class="header-section-number">6.3</span> LightGBM</h2>
 <p>LightGBM は、勾配ブースティング決定木（GBDT）の高速な実装である <span class="citation" data-cites="Ke2017">(<a href="#ref-Ke2017" role="doc-biblioref">Ke ほか 2017年</a>)</span>。複数の弱学習器（決定木）を逐次的に構築し、残差を学習することで高い予測精度を実現する。</p>
 <div class="no-row-height column-margin column-container"><div id="ref-Ke2017" class="csl-entry" role="listitem">
 Ke, Guolin, Qi Meng, Thomas Finley, ほか. 2017年. <span>「<span>LightGBM</span>: A Highly Efficient Gradient Boosting Decision Tree」</span>. <em>Advances in Neural Information Processing Systems 30 (NeurIPS 2017)</em>, 3146–54.
@@ -389,11 +395,11 @@ Ke, Guolin, Qi Meng, Thomas Finley, ほか. 2017年. <span>「<span>LightGBM</sp
 <p>勾配ブースティングでは、<span class="math inline">\(M\)</span> 本の決定木 <span class="math inline">\(f_m\)</span> を逐次的に加えることで予測関数 <span class="math inline">\(F\)</span> を構築する。</p>
 <p><span id="eq-gbdt"><span class="math display">\[
 F_M(\mathbf{x}) = F_0(\mathbf{x}) + \sum_{m=1}^{M} \eta \cdot f_m(\mathbf{x})
-\tag{5.2}\]</span></span></p>
+\tag{6.2}\]</span></span></p>
 <p>ここで <span class="math inline">\(\eta\)</span> は学習率（learning rate）であり、各ステップの寄与を制御する。各ステップ <span class="math inline">\(m\)</span> では、損失関数 <span class="math inline">\(L\)</span> の負の勾配（擬似残差）に対して決定木 <span class="math inline">\(f_m\)</span> を適合させる。</p>
 <p><span id="eq-pseudo-residual"><span class="math display">\[
 r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf{x}_i)}
-\tag{5.3}\]</span></span></p>
+\tag{6.3}\]</span></span></p>
 </section>
 <section id="決定木の構造" class="level3">
 <h3 class="anchored" data-anchor-id="決定木の構造">決定木の構造</h3>
@@ -414,7 +420,7 @@ r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;5.1: 決定木による分岐のイメージ
+図&nbsp;6.1: 決定木による分岐のイメージ
 </figcaption>
 </figure>
 </div>
@@ -431,12 +437,12 @@ r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf
 </ol>
 </section>
 </section>
-<section id="説明変数の設計" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="説明変数の設計"><span class="header-section-number">5.4</span> 説明変数の設計</h2>
+<section id="説明変数の設計" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="説明変数の設計"><span class="header-section-number">6.4</span> 説明変数の設計</h2>
 <div id="tbl-features" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-features-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;5.2: 説明変数一覧
+表&nbsp;6.2: 説明変数一覧
 </figcaption>
 <div aria-describedby="tbl-features-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -497,8 +503,8 @@ r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf
 </figure>
 </div>
 </section>
-<section id="分析パイプライン" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="分析パイプライン"><span class="header-section-number">5.5</span> 分析パイプライン</h2>
+<section id="分析パイプライン" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="分析パイプライン"><span class="header-section-number">6.5</span> 分析パイプライン</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -518,35 +524,35 @@ r_{im} = -\frac{\partial L(y_i, F_{m-1}(\mathbf{x}_i))}{\partial F_{m-1}(\mathbf
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;5.2: 分析パイプライン
+図&nbsp;6.2: 分析パイプライン
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="精度評価指標" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="精度評価指標"><span class="header-section-number">5.6</span> 精度評価指標</h2>
+<section id="精度評価指標" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="精度評価指標"><span class="header-section-number">6.6</span> 精度評価指標</h2>
 <p>モデルの予測精度を評価するため、以下の3指標を使用する。</p>
 <section id="平均絶対誤差mae" class="level3">
 <h3 class="anchored" data-anchor-id="平均絶対誤差mae">平均絶対誤差（MAE）</h3>
 <p><span id="eq-mae"><span class="math display">\[
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
-\tag{5.4}\]</span></span></p>
+\tag{6.4}\]</span></span></p>
 </section>
 <section id="二乗平均平方根誤差rmse" class="level3">
 <h3 class="anchored" data-anchor-id="二乗平均平方根誤差rmse">二乗平均平方根誤差（RMSE）</h3>
 <p><span id="eq-rmse"><span class="math display">\[
 \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
-\tag{5.5}\]</span></span></p>
+\tag{6.5}\]</span></span></p>
 </section>
 <section id="決定係数r²" class="level3">
 <h3 class="anchored" data-anchor-id="決定係数r²">決定係数（R²）</h3>
 <p><span id="eq-r2"><span class="math display">\[
 R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}
-\tag{5.6}\]</span></span></p>
+\tag{6.6}\]</span></span></p>
 <p>ここで <span class="math inline">\(y_i\)</span> は実測値、<span class="math inline">\(\hat{y}_i\)</span> は予測値、<span class="math inline">\(\bar{y}\)</span> は実測値の平均、<span class="math inline">\(n\)</span> はサンプル数である。</p>
-<p><a href="#eq-mae" class="quarto-xref">式&nbsp;<span>5.4</span></a> は外れ値に頑健な指標、<a href="#eq-rmse" class="quarto-xref">式&nbsp;<span>5.5</span></a> は大きな誤差をより重く評価する指標、<a href="#eq-r2" class="quarto-xref">式&nbsp;<span>5.6</span></a> はモデルの説明力を0〜1で表す指標である。</p>
+<p><a href="#eq-mae" class="quarto-xref">式&nbsp;<span>6.4</span></a> は外れ値に頑健な指標、<a href="#eq-rmse" class="quarto-xref">式&nbsp;<span>6.5</span></a> は大きな誤差をより重く評価する指標、<a href="#eq-r2" class="quarto-xref">式&nbsp;<span>6.6</span></a> はモデルの説明力を0〜1で表す指標である。</p>
 
 
 
@@ -957,12 +963,12 @@ R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./02_データ.html" class="pagination-link" aria-label="データ">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">データ</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">データ</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./04_結果と考察.html" class="pagination-link" aria-label="結果と考察">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">結果と考察</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">結果と考察</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
