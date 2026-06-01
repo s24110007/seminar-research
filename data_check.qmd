@@ -1,0 +1,65 @@
+---
+title: "data_check"
+format: html
+---
+
+# 生成AIに関連する求人数の推移(2023年)
+
+![画像](unnamed (1).png)
+![画像](unnamed (2).png)
+![画像](unnamed (3).png)
+
+[出典](https://www.hiringlab.org/jp/blog/2023/08/29/%E6%96%B0%E8%88%88%E5%8A%B4%E5%83%8D%E5%B8%82%E5%A0%B4%EF%BC%9A%E7%94%9F%E6%88%90ai%E3%81%AB%E9%96%A2%E9%80%A3%E3%81%99%E3%82%8B%E8%81%B7%E3%81%AE%E5%8F%B0%E9%A0%AD/)
+
+
+# 情報通信業雇用数の推移
+```{r}
+#install.packages("readxl")
+```
+
+```{r}
+library(readxl)
+
+df <- read_excel("lt01-c30 (1).xlsx")
+
+write.csv(
+  df,
+  "01data.csv",
+  row.names = FALSE,
+  fileEncoding = "UTF-8"
+)
+```
+```{r}
+library(readr)
+df <- read_csv("01data.csv",
+               skip = 6,
+               show_col_types = FALSE)
+```
+
+```{r}
+head(df)
+str(df)
+```
+```{r}
+
+colSums(is.na(df))
+
+df_clean <- df |> tidyr::drop_na()
+
+```
+
+
+```{r}
+colnames(df)
+```
+```{r}
+summary(df)
+```
+
+```{r}
+library(ggplot2)
+ggplot(df, aes(y = "情報通信業")) +
+  geom_boxplot() +
+  labs(title = "外れ値の確認", y = "値")
+```
+

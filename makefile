@@ -37,3 +37,9 @@ publish: git
 
 clean:
 	rm -rf docs .quarto a1_発表資料.html a1_発表資料.pdf a1_発表資料.pptx a1_発表資料_files a1_発表資料_cache
+
+make publish:
+ git add -A
+ git commit -m "Update"
+ git push
+ quarto publish gh-pages
