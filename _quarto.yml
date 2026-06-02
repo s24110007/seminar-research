@@ -11,15 +11,15 @@ book:
   date: today
   chapters:
     - index.qmd
-    - research_plan.qmd
-    - data_check.qmd
+   
+ 
     
     - part: "第1章　研究概要"
       chapters:
-        - 01_研究概要.qmd
+        - research_plan.qmd
     - part: "第2章　データ"
       chapters: 
-        - 02_データ.qmd
+        - data_check.qmd
     - part: "第3章　分析手法"
       chapters:
         - 03_分析手法.qmd

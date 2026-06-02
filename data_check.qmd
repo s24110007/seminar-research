@@ -13,52 +13,78 @@ format: html
 
 
 # 情報通信業雇用数の推移
-```{r}
-#install.packages("readxl")
-```
 
-```{r}
-library(readxl)
 
-df <- read_excel("lt01-c30 (1).xlsx")
-
-write.csv(
-  df,
-  "01data.csv",
-  row.names = FALSE,
-  fileEncoding = "UTF-8"
-)
-```
 ```{r}
 library(readr)
-df <- read_csv("01data.csv",
-               skip = 6,
-               show_col_types = FALSE)
+df <- read_csv(
+  "001data.csv",
+  skip = 3,
+  col_names = c("年","月","情報通信業雇用者数"),
+  show_col_types = FALSE)
 ```
 
 ```{r}
+library(dplyr)
+library(stringr)
+library(lubridate)
+
+# 数値化
+df$情報通信業雇用者数 <- as.numeric(
+  gsub("[()<> ]", "", df$情報通信業雇用者数)
+)
+
+# 年の欠損を補完
+df$年 <- zoo::na.locf(df$年)
+
+# 月から数字取得
+df$月数 <- as.numeric(str_extract(df$月, "\\d+"))
+
+# 和暦→西暦
+df$西暦 <- ifelse(
+  grepl("平成", df$年),
+  as.numeric(str_extract(df$年, "\\d+")) + 1988,
+  as.numeric(str_extract(df$年, "\\d+")) + 2018
+)
+
+# 日付列作成
+df$年月 <- as.Date(
+  paste(df$西暦, df$月数, "01", sep = "-")
+)
+```
+
+
+```{r}
+df <- df[, c(-4,-5,-6,-7,-8,-9)]
+df$情報通信業雇用者数 <- as.numeric(gsub("[()<>]", "", df$情報通信業雇用者数))
+
 head(df)
+```
+
+```{r}
 str(df)
 ```
-```{r}
 
+
+```{r}
 colSums(is.na(df))
 
 df_clean <- df |> tidyr::drop_na()
-
 ```
 
 
 ```{r}
 colnames(df)
 ```
+
 ```{r}
-summary(df)
+summary(df$情報通信業雇用者数)
 ```
 
 ```{r}
+
 library(ggplot2)
-ggplot(df, aes(y = "情報通信業")) +
+ggplot(df, aes(y = "情報通信業雇用者数")) +
   geom_boxplot() +
   labs(title = "外れ値の確認", y = "値")
 ```
