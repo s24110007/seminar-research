@@ -47,10 +47,38 @@ df$西暦 <- ifelse(
   as.numeric(str_extract(df$年, "\\d+")) + 2018
 )
 
-# 日付列作成
+```
+
+```{r}
+df$年 <- gsub("元", "1", df$年)
+
+df$西暦 <- case_when(
+  grepl("平成", df$年) ~
+    as.numeric(str_extract(df$年, "\\d+")) + 1988,
+
+  grepl("令和", df$年) ~
+    as.numeric(str_extract(df$年, "\\d+")) + 2018,
+
+  TRUE ~ NA_real_
+)
+
+
+df$年 <- gsub("令和元年", "令和1年", df$年)
+
 df$年月 <- as.Date(
   paste(df$西暦, df$月数, "01", sep = "-")
 )
+```
+
+```{r}
+df
+```
+
+
+```{r}
+df %>%
+  filter(西暦 == 2019) %>%
+  select(年, 月, 西暦)
 ```
 
 
@@ -87,5 +115,9 @@ library(ggplot2)
 ggplot(df, aes(y = "情報通信業雇用者数")) +
   geom_boxplot() +
   labs(title = "外れ値の確認", y = "値")
+```
+
+```{r}
+saveRDS(df, "df_clean.rds")
 ```
 
