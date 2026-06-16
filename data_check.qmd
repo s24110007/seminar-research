@@ -16,6 +16,7 @@ format: html
 
 
 ```{r}
+#| message: false
 library(readr)
 df <- read_csv(
   "001data.csv",
@@ -25,6 +26,7 @@ df <- read_csv(
 ```
 
 ```{r}
+#| message: false
 library(dplyr)
 library(stringr)
 library(lubridate)
@@ -50,6 +52,7 @@ df$西暦 <- ifelse(
 ```
 
 ```{r}
+#| message: false
 df$年 <- gsub("元", "1", df$年)
 
 df$西暦 <- case_when(
@@ -70,19 +73,9 @@ df$年月 <- as.Date(
 )
 ```
 
-```{r}
-df
-```
-
 
 ```{r}
-df %>%
-  filter(西暦 == 2019) %>%
-  select(年, 月, 西暦)
-```
-
-
-```{r}
+#| message: false
 df <- df[, c(-4,-5,-6,-7,-8,-9)]
 df$情報通信業雇用者数 <- as.numeric(gsub("[()<>]", "", df$情報通信業雇用者数))
 
@@ -109,13 +102,6 @@ colnames(df)
 summary(df$情報通信業雇用者数)
 ```
 
-```{r}
-
-library(ggplot2)
-ggplot(df, aes(y = "情報通信業雇用者数")) +
-  geom_boxplot() +
-  labs(title = "外れ値の確認", y = "値")
-```
 
 ```{r}
 saveRDS(df, "df_clean.rds")
