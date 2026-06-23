@@ -1,0 +1,14 @@
+---
+title: "Untitled"
+format: html
+---
+
+```{r}
+df <- readRDS("df_clean.rds")
+```
+
+```{r}
+
+```
+
+
