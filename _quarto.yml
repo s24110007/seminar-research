@@ -22,7 +22,7 @@ book:
         - data_check.qmd
     - part: "第3章　分析手法"
       chapters:
-        - descriptive.qmd
+        - 03_分析手法.qmd
     - part: "第4章　結果と考察"
       chapters:
         - 04_結果と考察.qmd
