@@ -14,7 +14,7 @@
     "href": "research_plan.html",
     "title": "2  研究計画書",
     "section": "",
-    "text": "2.1 1.研究目的\nAIが社会に広く普及し、社会の中心となっていくであろうこれからの時代に向け、AIと社会の関連を知っておきたいと思った",
+    "text": "2.1 研究目的\nAIが社会に広く普及し、社会の中心となっていくであろうこれからの時代に向け、AIと社会の関連を知っておきたいと思った",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -24,8 +24,8 @@
     "objectID": "research_plan.html#リサーチクエスチョン",
     "href": "research_plan.html#リサーチクエスチョン",
     "title": "2  研究計画書",
-    "section": "2.2 2. リサーチクエスチョン",
-    "text": "2.2 2. リサーチクエスチョン\n「生成AIの普及は求人に影響を与えたのか」",
+    "section": "2.2 リサーチクエスチョン",
+    "text": "2.2 リサーチクエスチョン\n「生成AIの普及は求人に影響を与えたのか」",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -35,8 +35,8 @@
     "objectID": "research_plan.html#仮説",
     "href": "research_plan.html#仮説",
     "title": "2  研究計画書",
-    "section": "2.3 3.仮説",
-    "text": "2.3 3.仮説\n影響を与えたと考える（特に、IT分野の仕事など）",
+    "section": "2.3 仮説",
+    "text": "2.3 仮説\n影響を与えたと考える（特に、IT分野の仕事など）",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -46,8 +46,8 @@
     "objectID": "research_plan.html#使用データ",
     "href": "research_plan.html#使用データ",
     "title": "2  研究計画書",
-    "section": "2.4 4.使用データ",
-    "text": "2.4 4.使用データ\ngogle trandsの検索データ,indeed等のサイトの求人データ",
+    "section": "2.4 使用データ",
+    "text": "2.4 使用データ\ngogle trandsの検索データ,indeed等のサイトの求人データ",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -57,8 +57,8 @@
     "objectID": "research_plan.html#分析方法",
     "href": "research_plan.html#分析方法",
     "title": "2  研究計画書",
-    "section": "2.5 5.分析方法",
-    "text": "2.5 5.分析方法\n時系列比較　相関分析",
+    "section": "2.5 分析方法",
+    "text": "2.5 分析方法\n時系列比較　相関分析",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -68,8 +68,8 @@
     "objectID": "research_plan.html#スケジュール",
     "href": "research_plan.html#スケジュール",
     "title": "2  研究計画書",
-    "section": "2.6 6.スケジュール",
-    "text": "2.6 6.スケジュール\n\n\n\n回\n予定作業\n\n\n\n\n第4回\n求人サイトのデータを探しダウンロード\n\n\n第5回\n検索データとの比較 AI以外の要因を調査\n\n\n第6回\n時系列比較、見直し\n\n\n第7回\n中間発表\n\n\n第8回\nデータ整理など\n\n\n第9回\n相関分析、グラフ作成\n\n\n第10回\n考察\n\n\n第11回\n見直し\n\n\n第12回\n最終確認",
+    "section": "2.6 スケジュール",
+    "text": "2.6 スケジュール\n\n\n\n回\n予定作業\n\n\n\n\n第4回\n求人サイトのデータを探しダウンロード\n\n\n第5回\n検索データとの比較 AI以外の要因を調査\n\n\n第6回\n時系列比較、見直し\n\n\n第7回\n中間発表\n\n\n第8回\nデータ整理など\n\n\n第9回\n相関分析、グラフ作成\n\n\n第10回\n考察\n\n\n第11回\n見直し\n\n\n第12回\n最終確認",
     "crumbs": [
       "第1章　研究概要",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
@@ -80,7 +80,7 @@
     "href": "data_check.html",
     "title": "3  data_check",
     "section": "",
-    "text": "4 生成AIに関連する求人数の推移(2023年)\n  \n出典\n\n\n5 情報通信業雇用数の推移\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\n\nAttaching package: 'lubridate'\n\n\nThe following objects are masked from 'package:base':\n\n    date, intersect, setdiff, union\n\n\n\n\n\n  \n\n\n\n\n\ntibble [292 × 6] (S3: tbl_df/tbl/data.frame)\n $ 年                : chr [1:292] \"平成14年\" \"平成14年\" \"平成14年\" \"平成14年\" ...\n $ 月                : chr [1:292] \"1月\" \"2月\" \"3月\" \"4月\" ...\n $ 情報通信業雇用者数: num [1:292] 153 156 156 159 157 159 160 164 171 160 ...\n $ 月数              : num [1:292] 1 2 3 4 5 6 7 8 9 10 ...\n $ 西暦              : num [1:292] 2002 2002 2002 2002 2002 ...\n $ 年月              : Date[1:292], format: \"2002-01-01\" \"2002-02-01\" ...\n\n\n\n\n                年                 月 情報通信業雇用者数               月数 \n                 0                  0                  0                  0 \n              西暦               年月 \n                 8                  8 \n\n\n\n\n[1] \"年\"                 \"月\"                 \"情報通信業雇用者数\"\n[4] \"月数\"               \"西暦\"               \"年月\"              \n\n\n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  148.0   185.8   201.5   214.4   237.8   323.0 \n\n\n\n\nWarning in geom_boxplot(): All aesthetics have length 1, but the data has 292 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.",
+    "text": "4 生成AIに関連する求人数の推移(2023年)\n  \n出典\n\n\n5 情報通信業雇用数の推移\n\n\n\n  \n\n\n\n\n\ntibble [292 × 6] (S3: tbl_df/tbl/data.frame)\n $ 年                : chr [1:292] \"平成14年\" \"平成14年\" \"平成14年\" \"平成14年\" ...\n $ 月                : chr [1:292] \"1月\" \"2月\" \"3月\" \"4月\" ...\n $ 情報通信業雇用者数: num [1:292] 153 156 156 159 157 159 160 164 171 160 ...\n $ 月数              : num [1:292] 1 2 3 4 5 6 7 8 9 10 ...\n $ 西暦              : num [1:292] 2002 2002 2002 2002 2002 ...\n $ 年月              : Date[1:292], format: \"2002-01-01\" \"2002-02-01\" ...\n\n\n\n\n                年                 月 情報通信業雇用者数               月数 \n                 0                  0                  0                  0 \n              西暦               年月 \n                 0                  0 \n\n\n\n\n[1] \"年\"                 \"月\"                 \"情報通信業雇用者数\"\n[4] \"月数\"               \"西暦\"               \"年月\"              \n\n\n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  148.0   185.8   201.5   214.4   237.8   323.0",
     "crumbs": [
       "第2章　データ",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>data_check</span>"
